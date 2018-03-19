@@ -46,7 +46,7 @@ public class ExampleBot extends TelegramLongPollingBot {
 			String text = message.getText();
 			response.setText(text);
 			try {
-				sendMessage(response);
+				execute(response);
 				logger.info("Sent message \"{}\" to {}", text, chatId);
 			} catch (TelegramApiException e) {
 				logger.error("Failed to send message \"{}\" to {} due to error: {}", text, chatId, e.getMessage());
