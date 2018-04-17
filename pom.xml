@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.0.RELEASE</version>
+		<version>2.0.1.RELEASE</version>
 		<relativePath />
 	</parent>
 	
@@ -34,25 +34,19 @@
 		<url>https://github.com/xabgesagtx/telegram-spring-boot-starter-example</url>
 		<connection>scm:git:git://github.com/xabgesagtx/telegram-spring-boot-starter-example.git</connection>
 		<developerConnection>scm:git:git@github.com:xabgesagtx/telegram-spring-boot-starter-example.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+ 	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.github.xabgesagtx</groupId>
 			<artifactId>telegram-spring-boot-starter</artifactId>
-			<version>0.16</version>
+			<version>0.17</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -64,14 +58,14 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
