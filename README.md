@@ -1,6 +1,6 @@
 # telegram-spring-boot-starter-example
 
-[![Build Status](https://travis-ci.org/xabgesagtx/telegram-spring-boot-starter-example.svg?branch=master)](https://travis-ci.org/xabgesagtx/telegram-spring-boot-starter-example)
+[![build badge](https://github.com/xabgesagtx/telegram-spring-boot-starter-example/workflows/build/badge.svg)](https://github.com/xabgesagtx/telegram-spring-boot-starter-example/actions?query=workflow%3Abuild)
 
 Example project for [telegram-spring-boot-starter](https://github.com/xabgesagtx/telegram-spring-boot-starter)
 
