@@ -4,10 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import javax.annotation.PostConstruct;
@@ -44,7 +44,7 @@ public class ExampleBot extends TelegramLongPollingBot {
 			Message message = update.getMessage();
 			SendMessage response = new SendMessage();
 			Long chatId = message.getChatId();
-			response.setChatId(chatId);
+			response.setChatId(String.valueOf(chatId));
 			String text = message.getText();
 			response.setText(text);
 			try {
