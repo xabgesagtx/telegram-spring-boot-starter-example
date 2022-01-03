@@ -18,15 +18,17 @@ import javax.annotation.PostConstruct;
  *
  */
 @Component
-public class ExampleBot extends TelegramLongPollingBot {
+class ExampleBot extends TelegramLongPollingBot {
 	
 	private static final Logger logger = LoggerFactory.getLogger(ExampleBot.class);
 	
-	@Value("${bot.token}")
-	private String token;
-	
-	@Value("${bot.username}")
-	private String username;
+	private final String token;
+	private final String username;
+
+	ExampleBot(@Value("${bot.token}") String token, @Value("${bot.username}") String username) {
+		this.token = token;
+		this.username = username;
+	}
 	
 	@Override
 	public String getBotToken() {
